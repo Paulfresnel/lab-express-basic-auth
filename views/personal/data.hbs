@@ -1,0 +1,13 @@
+<a href="/home">Go Back ></a>
+
+<h2> Edit Your Data Info</h2>
+
+<form method="post" action="/home-edit">
+<label> Edit your Name: </label>
+<input type='text' name="username" value="{{username}}">
+<button>Edit Info</button>
+</form>
+
+{{#if errorMessage}}
+<p>{{errorMessage}}</p>
+{{/if}} 
